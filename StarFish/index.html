@@ -1,0 +1,468 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image" href= "C:\Users\vaisy\Desktop\project_starFish\starfish.png">
+    <link rel="stylesheet" href="C:\Users\vaisy\Desktop\project_starFish\StarFish\starcss.css">
+    <script src="C:\Users\vaisy\Desktop\project_starFish\StarFish\starjs.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make your choice for practice programming</title>
+    <!-- Boostrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Boostrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- animate-->
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <span style="font-size:x-large; font-weight: 900; color: crimson; padding-right: 10px;"><img class ="icon" src="C:\Users\vaisy\Desktop\project_starFish\starfish.png" height="35em" alt="logo" style="border-radius: 5em; border: 3px solid black;">STAR FI<span style="color:aqua">s</span>H</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="padding: 5px; font-weight: 700;"><i class="fas fa-home"></i>&nbsp; Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.onlinegdb.com/online_c_compiler" style="padding: 5px" onclick="suggestion()"><i class="fas fa-globe-americas"></i>&nbsp;Practice online</a>
+            </li>
+            <!--Drop down starts here-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="padding: 5px;">
+                <i class="fas fa-download"></i>&nbsp;Popular Downloads
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu"><a class="dropdown-item" href="#"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\c_favicon.png">&nbsp;C<i class="fas fa-angle-double-right"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#c_lang_tcpp"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_tcpp.png"> Turbo C++</a></li>
+                    <li><a class="dropdown-item" href="#c_lang_cb"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_codeblocks.png">&nbsp;Code Blocks</a></li>
+                    <li><a class="dropdown-item" href="#c_lang_dcpp"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_devcpp.png">&nbsp;Dev C++</a></li>
+                    <li><a class="dropdown-item" href="#c_lang_vsc"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_vscode.png">&nbsp;VS Code</a></li>
+
+                  </ul>
+                <li class="dropdown-submenu"><a class="dropdown-item" href="#"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\cpp_favicon.png">&nbsp;C++<i class="fas fa-angle-double-right"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#c_lang_tcpp"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_tcpp.png"> Turbo C++</a></li>
+                    <li><a class="dropdown-item" href="#c_lang_cb"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_codeblocks.png">&nbsp;Code Blocks</a></li>
+                    <li><a class="dropdown-item" href="#c_lang_dcpp"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_devcpp.png">&nbsp;Dev C++</a></li>
+                    <li><a class="dropdown-item" href="#c_lang_vsc"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_vscode.png">&nbsp;VS Code</a></li>
+                  </ul>
+                <li class="dropdown-submenu"><a class="dropdown-item" href="#"><i class="fab fa-java"></i>&nbsp;Java<i class="fas fa-angle-double-right"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#java_eclipse"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_eclipse.png">&nbsp;Ecllipse</a></li>
+                        <li><a class="dropdown-item" href="#java_netbeans"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_netbeans.png">&nbsp;Net Beans</a></li>
+                        <li><a class="dropdown-item" href="#java_vsc"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_vscode.png">&nbsp;VS Code</a></li>
+
+                    </ul>
+                <li class="dropdown-submenu"><a class="dropdown-item" href="#"><i class="fab fa-python"></i>&nbsp;Python<i class="fas fa-angle-double-right"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#python_pc"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_pycharm.png">&nbsp;Py Charm</a></li>
+                      <li><a class="dropdown-item" href="#python_atom"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_atom.png">&nbsp;Atom</a></li>
+                      <li><a class="dropdown-item" href="#python_vsc"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_vscode.png">&nbsp;VS Code</a></li>
+
+                  </ul>
+                <li class="dropdown-submenu"><a class="dropdown-item" href="#"><i class="fas fa-code"></i>&nbsp;Html Css Js<i class="fas fa-angle-double-right"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#wd_vsc"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_vscode.png">&nbsp;VS Code</a></li>
+                      <li><a class="dropdown-item" href="#wd_st"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_sublime.png">&nbsp;Sublime Text</a></li>
+                      <li><a class="dropdown-item" href="#wd_atom"><img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_atom.png">&nbsp;Atom</a></li>
+                  </ul>
+                </li>
+            </ul>
+            </li>
+            <!--dropdown ends here-->
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\vaisy\Desktop\project_starFish\StarFish\index2.html" style="padding: 5px;"><i class="fas fa-book"></i></i>&nbsp;E-Books</a>
+              </li>
+          </ul>
+          <form class="form-inline my-10 my-lg-0" id="formsearch">
+            <input class="form-control mr-sm-10" type="search" id="textsearch" placeholder="Ask Here" aria-label="Search">
+            <button class="btn btn-outline-danger my-10 my-sm-0" id = "searchid" type="submit" onclick="searchInput()">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <!-- Body content starts here -->
+      <section class="stater">
+        <div id="pop-up">
+            <img src="C:\Users\vaisy\Desktop\project_starFish\computer_languages.jpg" class="l_image" width="700px" style="border-radius: 2em;"
+            >
+        </div>
+        <h1>The Only Site To Download Any IDE's</h1>
+        <h4>Download Or Practice Online</h4>
+      </section>
+      <section class="main">
+        <p>Ever since the invention of Charles Babbage’s difference engine in 1822, computers have required a means of instructing them to perform a specific task. This means is known as a programming language. Computer languages were first composed of a series of steps to wire a particular program; these morphed into a series of steps keyed into the computer and then executed; later these languages acquired advanced features such as logical branching and object orientation. The computer languages of the last fifty years have come in two stages, the first major languages and the second major languages, which are in use today.<br></p>
+        <p>
+          The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc in the year 1972.Befor C language was developed there were other programming languages which are hardly used in modern days which include 
+          <div class="row">
+            <div class="coloumn1">
+              <ul type="none">
+                  <li>1951 – Regional Assembly Language</li>
+                  <li>1952 – Autocode</li>
+                  <li>1954 – IPL (forerunner to LISP)</li>
+                  <li>1955 – FLOW-MATIC (led to COBOL)</li>
+                  <li>1957 – FORTRAN (first compiler)</li>
+                  <li>1957 – COMTRAN (precursor to COBOL)</li>
+                  <li>1958 – LISP</li>
+                  <li>1958 – ALGOL 58</li>
+                  <li>1959 – FACT (forerunner to COBOL)</li>
+                  <li>1959 – COBOL</li>                                                    
+                  <li>1959 – RPG</li>
+            </div>
+              <div class="coloumn">
+                <ul type="none">
+                  <li>1962 – APL</li>
+                  <li>1962 – Simula</li>
+                  <li>1962 – SNOBOL</li>
+                  <li>1963 – CPL (forerunner to C)</li>
+                  <li>1964 – Speakeasy</li>
+                  <li>1964 – BASIC</li>
+                  <li>1964 – PL/I</li>
+                  <li>1966 – JOSS</li>
+                  <li>1966 – MUMPS</li>
+                  <li>1967 – BCPL (forerunner to C)</li>
+                </ul>
+              </div>
+              </ul>
+          </div>
+ 
+          C programming is considered as the base for other programming languages, that is why it is known as mother language.<br>
+          It can be defined by the following ways:
+          <ul type="none">
+          <li>Mother language</li>
+          <li>System programming language</li>
+          <li>Procedure-oriented programming language</li>
+          <li>Structured programming language</li> 
+          <li>Mid-level programming language</li>
+          </ul>
+        </p>
+      </section>
+      <section class="C_lang">
+        <h3 class="dropdown-toggle" onclick="display_section(1)" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;border-color: aqua;">Downloads for <span style="color: aqua;">C</span> and <span style="color: aqua;">C++</span> languages</h3>
+        <hr>
+        <div id="dropdown_section1">
+          <div style="padding: 0px;">
+            <h5 id="c_lang_cb" style="text-align: center;">Download CodeBlocks</h5>
+              <div class="windows">
+                <i class="fab fa-windows fa-5x" id="hover-me1" style="padding: 25px;"></i>
+                <br>
+                <p>Windows 7,8,10</p>
+                <a  onmouseenter="start(1)" onmouseleave="stop(1)" href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe">Download - 64bit</a><br>
+                <a  onmouseenter="start(1)" onmouseleave="stop(1)" href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-mingw-32bit-setup.exe">Download - 32bit</a>
+              </div>
+              <div class="linux">
+                <i class="fab fa-linux fa-5x" id="hover-me2" style="padding: 25px;"></i>
+                <br>
+                <p>Linux</p>
+                <a onmouseenter="start(2)" onmouseleave="stop(2)" href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe">Download - 64bit</a><br>
+                <a onmouseenter="start(2)" onmouseleave="stop(2)" href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-mingw-32bit-setup.exe">Download - 32bit</a>
+              </div>
+              <div class="apple">
+                <i class="fab fa-apple fa-5x" id="hover-me3" style="padding: 25px;"></i>
+                <br>
+                <p>MacOs</p>
+                <a onmouseenter="start(3)" onmouseleave="stop(3)" href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe">Download - 64Bit</a><br>
+                <a onmouseenter="start(3)" onmouseleave="stop(3)" href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-mingw-32bit-setup.exe">Download - 32Bit</a>
+              </div>
+          </div>
+          <div style="padding: 0px;">
+            <h5 id="c_lang_dcpp" style="text-align: center;">Download DevC++</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me4" style="padding: 25px;"></i>
+              <br>
+              <p>Windows 7,8,10</p>
+              <a onmouseenter="start(4)" onmouseleave="stop(4)" href="https://downloads.sourceforge.net/project/orwelldevcpp/Setup%20Releases/Dev-Cpp%205.11%20TDM-GCC%204.9.2%20Setup.exe">Download</a>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me5" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(5)" onmouseleave="stop(5)" href="https://download.cnet.com/Dev-C-for-Linux/3001-2069_4-75219816.html">Download</a>
+            </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me6" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs</p>
+              <a onmouseenter="start(6)" onmouseleave="stop(6)" href="https://www.nvpc.nl/cmsimages/D25286.rar">Download</a><br>
+            </div>
+          </div>
+          <div style="padding: 0px;">
+            <h5 id="c_lang_vsc" style="text-align: center;">Download VS Code</h5>
+              <div class="windows">
+                <i class="fab fa-windows fa-5x" id="hover-me7" style="padding: 25px;"></i>
+                <br>
+                <p>Windows 7,8,10</p>
+                <a onmouseenter="start(7)" onmouseleave="stop(7)" href="https://code.visualstudio.com/download#">Download</a><br>
+                </div>
+              <div class="linux">
+                <i class="fab fa-linux fa-5x" id="hover-me8" style="padding: 25px;"></i>
+                <br>
+                <p>Linux</p>
+                <a onmouseenter="start(8)" onmouseleave="stop(8)" href="https://code.visualstudio.com/download#">Download</a><br>
+                </div>
+              <div class="apple">
+                <i class="fab fa-apple fa-5x" id="hover-me9" style="padding: 25px;"></i>
+                <br>
+                <p>MacOs</p>
+                <a onmouseenter="start(9)" onmouseleave="stop(9)" href="https://code.visualstudio.com/download#">Download</a><br>
+              </div>
+          </div>
+          <div style="padding: 0px;">
+            <h5 id="c_lang_tcpp" style="text-align: center;">Download TurboC++</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me10" style="padding: 25px;"></i>
+              <p>Windows 7,8,10</p>
+              <a onmouseenter="start(10)" onmouseleave="stop(10)" href="https://github.com/vineetchoudhary/turbocpp/releases/download/v3.2/Turbo.C.3.2.zip?raw&#x3D;true&amp;after&#x3D;https://developerinsider.co/c-and-cpp-insider/">Download</a>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me11" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(11)" onmouseleave="stop(11)" href="https://www.geeksforgeeks.org/how-to-install-turbo-c-on-linux/">Download</a><br>
+              </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me12" style="padding: 25px;"></i>
+              <p>MacOs</p>
+              <a onmouseenter="start(12)" onmouseleave="stop(12)" href="https://sourceforge.net/projects/turbo-for-mac/files/latest/download">Download</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="Java">
+      <h3 class="dropdown-toggle" onclick="display_section(2)"><b>Downloads for <span style="color: aqua;">Java</span></b></h3><hr>
+        <div id="dropdown_section2">
+          <div style="padding: 0px;">
+            <h5 id="java_eclipse" style="text-align: center;">Download Eclipse</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me13" style="padding: 25px;"></i>
+              <br>
+              <p>Windows 7,8,10</p>
+              <a onmouseenter="start(13)" onmouseleave="stop(13)" href="https://archive.eclipse.org/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-win32-x86_64.zip">Download - X86_64bit</a><br>
+              <a onmouseenter="start(13)" onmouseleave="stop(13)" href="https://archive.eclipse.org/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-win32.zip">Download - 32bit</a>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me14" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(14)" onmouseleave="stop(14)" href="https://archive.eclipse.org/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz">Download - X86_64</a><br>
+              <a onmouseenter="start(14)" onmouseleave="stop(14)" href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/helios/M7/eclipse-linuxtools-helios-M7-linux-gtk.tar.gz">Download - 32bit</a>
+            </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me15" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs</p>
+              <a onmouseenter="start(15)" onmouseleave="stop(15)" href="https://archive.eclipse.org/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz">Download - X86_64</a><br>
+              <a onmouseenter="start(15)" onmouseleave="stop(15)" href="https://archive.eclipse.org/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-macosx-cocoa.tar.gz">Download - 32bit</a>
+            </div>
+          </div>
+          <div style="padding: 0px;">
+            <h5 id="java_netbeans" style="text-align: center;">Download Apache Netbeans</h5>
+              <div class="windows">
+                <i class="fab fa-windows fa-5x" id="hover-me16" style="padding: 25px;"></i>
+                <br>
+                <p>Windows 7,8,10</p>
+                <a onmouseenter="start(16)" onmouseleave="stop(16)" href="https://dlcdn.apache.org/netbeans/netbeans/12.5/Apache-NetBeans-12.5-bin-windows-x64.exe">Download - 64bit</a>
+              </div>
+              <div class="linux">
+                <i class="fab fa-linux fa-5x" id="hover-me17" style="padding: 25px;"></i>
+                <br>
+                <p>Linux</p>
+                <a onmouseenter="start(17)" onmouseleave="stop(17)" href="https://netbeans.apache.org/download/index.html">Download - 64bit</a>
+              </div>
+              <div class="apple">
+                <i class="fab fa-apple fa-5x" id="hover-me18"style="padding: 25px;"></i>
+                <br>
+                <p>MacOsx.dmg</p>
+                <a onmouseenter="start(18)" onmouseleave="stop(18)" href="https://dlcdn.apache.org/netbeans/netbeans/12.5/Apache-NetBeans-12.5-bin-macosx.dmg">Download </a>
+              </div>
+          </div>
+          <div style="padding: 0px;">
+            <h5 id="java_vsc" style="text-align: center;">Download VS Code</h5>
+              <div class="windows">
+                <i class="fab fa-windows fa-5x" id="hover-me19" style="padding: 25px;"></i>
+                <br>
+                <p>Windows 7,8,10</p>
+                <a onmouseenter="start(19)" onmouseleave="stop(19)" href="https://code.visualstudio.com/download#">Download</a><br>
+                </div>
+              <div class="linux">
+                <i class="fab fa-linux fa-5x" id="hover-me20" style="padding: 25px;"></i>
+                <br>
+                <p>Linux</p>
+                <a onmouseenter="start(20)" onmouseleave="stop(20)" href="https://code.visualstudio.com/download#">Download</a><br>
+                </div>
+              <div class="apple">
+                <i class="fab fa-apple fa-5x" id="hover-me21" style="padding: 25px;"></i>
+                <br>
+                <p>MacOs</p>
+                <a onmouseenter="start(21)" onmouseleave="stop(21)" href="https://code.visualstudio.com/download#">Download</a><br>
+                </div>
+          </div>
+      </div>
+    </section>
+    <section class="python">
+      <h3 class="dropdown-toggle" onclick="display_section(3)"><b>Downloads for <span style="color: aqua;">Python</span></b></h3><hr>
+      <div id="dropdown_section3">
+        <div style="padding: 0px;">
+          <h5 id="python_pc" style="text-align: center;">Download Pycharm</h5>
+          <div class="windows">
+            <i class="fab fa-windows fa-5x" id="hover-me22" style="padding: 25px;"></i>
+            <br>
+            <p>Windows</p>
+            <a onmouseenter="start(22)" onmouseleave="stop(22)" href="https://download.jetbrains.com/python/pycharm-community-2021.2.2.exe?_ga=2.217213526.1343587863.1633500926-1519869729.1633500926&_gl=1*9je98u*_ga*MTUxOTg2OTcyOS4xNjMzNTAwOTI2*_ga_V0XZL7QHEB*MTYzMzUwMDkyNS4xLjEuMTYzMzUwMTg2OS4w">Community Version</a>
+          </div>
+          <div class="linux">
+            <i class="fab fa-linux fa-5x" id="hover-me23" style="padding: 25px;"></i>
+            <br>
+            <p>Linux</p>
+            <a onmouseenter="start(23)" onmouseleave="stop(23)" href="https://download.jetbrains.com/python/pycharm-community-2021.2.2.tar.gz?_gl=1*mva3cm*_ga*MTUxOTg2OTcyOS4xNjMzNTAwOTI2*_ga_V0XZL7QHEB*MTYzMzUwMDkyNS4xLjEuMTYzMzUwMjA1Mi4w&_ga=2.242247874.1343587863.1633500926-1519869729.1633500926">Community Version</a>
+          </div>
+          <div class="apple">
+            <i class="fab fa-apple fa-5x" id="hover-me24" style="padding: 25px;"></i>
+            <br>
+            <p>MacOs</p>
+            <a onmouseenter="start(24)" onmouseleave="stop(24)" href="https://download.jetbrains.com/python/pycharm-community-2021.2.2.dmg?_gl=1*1c03u79*_ga*MTUxOTg2OTcyOS4xNjMzNTAwOTI2*_ga_V0XZL7QHEB*MTYzMzUwMDkyNS4xLjEuMTYzMzUwMjEwMS4w&_ga=2.253887688.1343587863.1633500926-1519869729.1633500926">Download Universal</a><br>
+            <a onmouseenter="start(24)" onmouseleave="stop(24)" href="https://download.jetbrains.com/python/pycharm-community-2021.2.2.dmg?_gl=1*m164je*_ga*MTUxOTg2OTcyOS4xNjMzNTAwOTI2*_ga_V0XZL7QHEB*MTYzMzUwMDkyNS4xLjEuMTYzMzUwMjE1My4w&_ga=2.253887688.1343587863.1633500926-1519869729.1633500926">Download .dmg(Intel)</a><br>
+            <a onmouseenter="start(24)" onmouseleave="stop(24)" href="https://download.jetbrains.com/python/pycharm-community-2021.2.2-aarch64.dmg?_gl=1*1oq18dv*_ga*MTUxOTg2OTcyOS4xNjMzNTAwOTI2*_ga_V0XZL7QHEB*MTYzMzUwMDkyNS4xLjEuMTYzMzUwMjE4MC4w&_ga=2.150030966.1343587863.1633500926-1519869729.1633500926">Download .dmg(Silicon)</a>
+          </div>
+        </div>
+        <div style="padding: 0px;">
+          <h5 id="python_vsc" style="text-align: center;">Download VS Code</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me25" style="padding: 25px;"></i>
+              <br>
+              <p>Windows 7,8,10</p>
+              <a onmouseenter="start(25)" onmouseleave="stop(25)" href="https://code.visualstudio.com/download#">Download</a><br>
+              </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me26" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(26)" onmouseleave="stop(26)" href="https://code.visualstudio.com/download#">Download</a><br>
+              </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me27" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs</p>
+              <a onmouseenter="start(27)" onmouseleave="stop(27)" href="https://code.visualstudio.com/download#">Download</a><br>
+            </div>
+        </div>
+        <div style="padding: 0px;">
+          <h5 id="python_atom"style="text-align: center;">Download Atom</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me28" style="padding: 25px;"></i>
+              <br>
+              <p>Windows 7 or later</p>
+              <a onmouseenter="start(28)" onmouseleave="stop(28)" href="https://atom-installer.github.com/v1.58.0/AtomSetup-x64.exe?s=1627025639&ext=.exe">Download</a><br>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me29" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(29)" onmouseleave="stop(29)" href="https://atom-installer.github.com/v1.58.0/AtomSetup-x64.exe?s=1627025639&ext=.exe">Download</a><br>
+            </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me30" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs</p>
+                <a onmouseenter="start(30)" onmouseleave="stop(30)" href="https://dxryqonso08qd.cloudfront.net/webscan/53196/28d8cf487e68271de87e0427d8b566609e29d40be9ff0a76c09ec72883a8e836/atom-mac.zip">Download</a><br>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="web-development">
+      <h3 class="dropdown-toggle" onclick="display_section(4)"><b>Downloads for <span style="color: aqua;">HTML CSS</span> &<span style="color: aqua;"> JS </span>(WEB DEV.)</b></h3><hr>
+      <div id="dropdown_section4">
+        <div style="padding: 0px;">
+          <h5 id="wd_vsc"style="text-align: center;">Download VS Code</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me31" style="padding: 25px;"></i>
+              <br>
+              <p>Windows 7,8,10</p>
+              <a onmouseenter="start(31)" onmouseleave="stop(31)" href="https://code.visualstudio.com/download#">Download</a><br>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me32" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(32)" onmouseleave="stop(32)" href="https://code.visualstudio.com/download#">Download</a><br>
+            </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me33" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs</p>
+              <a onmouseenter="start(33)" onmouseleave="stop(33)" href="https://code.visualstudio.com/download#">Download</a><br>
+            </div>
+        </div>
+        <div style="padding: 0px;">
+          <h5 id="wd_atom" style="text-align: center;">Download Atom</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me34" style="padding: 25px;"></i>
+              <br>
+              <p>Windows 7 or later</p>
+              <a onmouseenter="start(34)" onmouseleave="stop(34)" href="https://atom-installer.github.com/v1.58.0/AtomSetup-x64.exe?s=1627025639&ext=.exe">Download</a><br>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me35" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(35)" onmouseleave="stop(35)" href="https://atom-installer.github.com/v1.58.0/AtomSetup-x64.exe?s=1627025639&ext=.exe">Download</a><br>
+            </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me36" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs</p>
+                <a onmouseenter="start(36)" onmouseleave="stop(36)" href="https://dxryqonso08qd.cloudfront.net/webscan/53196/28d8cf487e68271de87e0427d8b566609e29d40be9ff0a76c09ec72883a8e836/atom-mac.zip">Download</a><br>
+            </div>
+        </div>
+
+        <div style="padding: 0px;">
+          <h5 id="wd_st" style="text-align: center;">Download Sublime Text</h5>
+            <div class="windows">
+              <i class="fab fa-windows fa-5x" id="hover-me37" style="padding: 25px;"></i>
+              <br>
+              <p>Windows</p>
+              <a onmouseenter="start(37)" onmouseleave="stop(37)" href="https://download.sublimetext.com/Sublime Text Build 3211 x64 Setup.exe">Download - 64bit</a><br>
+              <a onmouseenter="start(37)" onmouseleave="stop(37)" href="https://download.sublimetext.com/Sublime Text Build 3211 Setup.exe">Download - 32bit</a>
+            </div>
+            <div class="linux">
+              <i class="fab fa-linux fa-5x" id="hover-me38" style="padding: 25px;"></i>
+              <br>
+              <p>Linux</p>
+              <a onmouseenter="start(38)" onmouseleave="stop(38)" href="https://download.sublimetext.com/sublime-text_build-3211_amd64.deb">Download - 64bit .deb</a><br>
+              <a onmouseenter="start(38)" onmouseleave="stop(38)" href="https://download.sublimetext.com/sublime-text-3211-1.x86_64.rpm">Download - 64bit .rpm</a><br>
+              <a onmouseenter="start(38)" onmouseleave="stop(38)" href="https://download.sublimetext.com/sublime_text_3_build_3211_x64.tar.bz2">Download - 64bit .tar .bz2</a><br>
+              <a onmouseenter="start(38)" onmouseleave="stop(38)" href="https://download.sublimetext.com/sublime_text_3_build_3211_x32.tar.bz2">Download - 32bit .tar .bz2</a><br>
+
+            </div>
+            <div class="apple">
+              <i class="fab fa-apple fa-5x" id="hover-me39" style="padding: 25px;"></i>
+              <br>
+              <p>MacOs 10.7 or later</p>
+                <a onmouseenter="start(39)" onmouseleave="stop(39)" href="https://download.sublimetext.com/Sublime Text Build 3211.dmg">Download</a><br>
+            </div>
+        </div>
+
+      </div>
+    </section>
+</body>
+<footer>
+  <div>
+    <a href="#navbarSupportedContent" class="goback">
+      Go To Top
+    </a>
+    <img src="C:\Users\vaisy\Desktop\project_starFish\favicons\favicon_india.png">
+    <h6>
+      Practice <span style="color: aqua;">|</span>  Evolve <span style="color: aqua;">|</span>  Excel
+    </h6>
+  </div>
+</footer>
+</html>
