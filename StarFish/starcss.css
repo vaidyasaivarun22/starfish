@@ -1,6 +1,7 @@
 marquee{
     display: none;
     border-radius: 3em;
+    color: crimson;
 }
 nav{
     position: fixed;
