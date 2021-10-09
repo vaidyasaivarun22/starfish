@@ -74,6 +74,9 @@ body h4{
         transform:translate(450px) rotateZ(70deg);
     }
 }
+h5{
+    text-align: center;
+}
 body section{
     margin: 50px;
 }
@@ -100,13 +103,25 @@ body section{
     }
 }
 /* shrinking and expanding based on device dispaly size media query*/
-@media screen and (max-width:702px) {
+@media screen and (max-width:500px) {
     body .stater .l_image{
-        max-width:500px;
+        max-width:300px;
         border-radius: 0px;
     }
     body .c_lang div div,body .Java div div,body .python div div,body .web-development div div{
         text-align: center;
+    }
+    body section h3{
+        font-size: small;
+    }
+    h5{
+        text-align: left;
+        font-size: 0.7em !important;
+    }
+    body .c_lang div div, body .Java div div, body .python div div, body .web-development div div{
+        padding: 2px !important;
+        margin-left: 0 !important;
+        display: block !important;
     }
 }
 /*Dont use section in short as other sections which are not in the same format fets affected*/
@@ -177,8 +192,6 @@ body .navbar .collapse ul li::before{
     content: "";
 }
 
-@media screen and (min-width:900px){
-
 footer{
     display: none;
 }
@@ -205,5 +218,4 @@ footer div h6{
     color:crimson;
     bottom: 10px;
     right:10px;
-}
 }
