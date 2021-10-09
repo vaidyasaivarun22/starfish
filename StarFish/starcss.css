@@ -113,7 +113,7 @@ body section{
         display: block;
     }
     body .stater .l_image{
-        max-width:300px;
+        max-width:275px;
         border-radius: 0px;
     }
     body .c_lang div div,body .Java div div,body .python div div,body .web-development div div{
