@@ -1,3 +1,7 @@
+marquee{
+    display: none;
+    border-radius: 3em;
+}
 nav{
     position: fixed;
     top: 0;
@@ -104,6 +108,9 @@ body section{
 }
 /* shrinking and expanding based on device dispaly size media query*/
 @media screen and (max-width:500px) {
+    marquee{
+        display: block;
+    }
     body .stater .l_image{
         max-width:300px;
         border-radius: 0px;
