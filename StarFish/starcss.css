@@ -115,6 +115,7 @@ body section{
     body .stater .l_image{
         max-width:275px;
         border-radius: 0px;
+        padding-right: 2px;
     }
     body .c_lang div div,body .Java div div,body .python div div,body .web-development div div{
         text-align: center;
@@ -163,6 +164,7 @@ body section i:hover{
 /*styling for download anchor tags for all links in the body*/
 body section div a{
     padding: 4px;
+    display: inline-block;
 }
 body section div a:hover{
     background-color: aqua;
