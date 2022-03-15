@@ -144,7 +144,7 @@ body section{
         display: block !important;
     }
 }
-/*Dont use section in short as other sections which are not in the same format fets affected*/
+/*Dont use section in short as other sections which are not in the same format gets affected*/
 body .c_lang div div,body .Java div div,body .python div div,body .web-development div div{
     display:inline-block;
     padding: 3em 8em;
@@ -176,6 +176,7 @@ body section i:hover{
 body section div a{
     padding: 4px;
     display: inline-block;
+    box-sizing: content-box;
 }
 body section div a:hover{
     background-color: aqua;
@@ -183,6 +184,7 @@ body section div a:hover{
     font-weight: 700;
     border-radius: 1em;
     text-decoration: none;
+    box-sizing: content-box;
 }
 body section h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
